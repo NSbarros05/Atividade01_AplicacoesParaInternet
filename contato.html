@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style_contato.css">
+
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li class="nav-li-link"><a class="nav-a-link" href="index.html">Home</a></li>
+                <li class="nav-li-link"><a class="nav-a-link" href="conteudo.html">Conteúdo</a></li>
+                <li class="nav-li-link"><a class="nav-a-link" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-impar">
+            <div>
+                <h1 id="titulo">Responda o formulário</h1>
+                <h3 id="subtitulo1">Para entrar em contato</h3>
+                <h3 id="subtitulo2"> Complete suas informações</h3>
+                <br>
+            </div>
+
+            <form>
+                <fieldset class="grupo">
+                    <div>
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="nome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome"required>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <label for="genero">Informe o seu gênero:</label><br>
+
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label><br>
+                
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label><br>
+
+                <input type="radio" id="outro" name="genero" value="outro">
+                <label for="outro">Outro</label><br>
+
+                <input type="radio" id="naoInformar" name="genero" value="naoInformar">
+                <label for="naoInformar">Prefiro não informar</label>
+                </div>
+
+                <div class="campo">
+                    <label for="Grau"><strong>Qual seu grau de conhecimento de React?</strong></label>
+                    <select id="Grau">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Não sei nada</option>
+                        <option>Sei bem pouco</option>
+                        <option>Sei utilizar bem</option>
+                        <option>Uso de forma excelente</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label><strong>Quais desses temas você gostaria de aprender mais?</strong></label><br><br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="React com TypeScript">
+                        <label for="tecnologia1">React com TypeScript</label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Testes com React">
+                        <label for="tecnologia2">Testes com React</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Next.js">
+                        <label for="tecnologia3">Next.js</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Animações em React">
+                        <label for="tecnologia4">Animações em React</label>
+                        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Performance e otimizações">
+                        <label for="tecnologia5">Performance e otimizações</label>
+                        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Deploy de apps React">
+                        <label for="tecnologia6">Deploy de apps React</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <label><strong>O que você mais gosta ou menos gosta no React? Conte sua experiência:</strong></label><br>
+                    <textarea rows="6" style="width: 26cm" id="experiencia" name="experiencia"></textarea>
+                </div>
+
+                <button class="botao" type="submit">Enviar</button>
+                <button class="botao" type="reset">Limpar tudo</button>
+            </form>
+        </section>    
+    </main>
+
+    <footer>
+        <small>Todos os direitos reservados &copy; - 2025</small>
+    </footer>
+</body>
+</html>
