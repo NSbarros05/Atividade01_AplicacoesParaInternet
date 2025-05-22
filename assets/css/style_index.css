@@ -41,7 +41,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
@@ -83,11 +83,6 @@ main {
     color: #007bff;
 }
 
-.img-logo, #img-reactjs1, #img-reactjs2 {
-    width: 80px;
-    height: auto;
-}
-
 .a-aside-logo {
     color: #007bff;
     text-decoration: none;
@@ -107,6 +102,20 @@ main {
     margin-bottom: 15px;
 }
 
+#img-reactjs1 {
+    width: 150px;
+    height: 80px;
+}
+
+#img-reactjs2 {
+    width: 150px;
+    height: 105px;
+}
+
+#logo-js {
+    width: 90px;
+    height: 90px;
+}
 
 footer {
     background-color: #007bff;
@@ -114,14 +123,10 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+    bottom: 0;
+    width: 100%;
 }
 
 footer small {
     font-size: 0.9rem;
-}
-
-
-#logo-js {
-    width: 65px;
-    height: 65px;
 }

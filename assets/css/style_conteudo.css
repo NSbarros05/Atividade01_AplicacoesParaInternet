@@ -41,7 +41,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 

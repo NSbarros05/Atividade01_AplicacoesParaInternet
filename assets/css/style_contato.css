@@ -41,7 +41,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
@@ -52,23 +52,17 @@ body {
 .section-impar {
     background-color: #fff;
     padding: 30px;
-    margin: 50px auto 20px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 1000px; 
+    width: 1700px; 
 }
 
-footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    bottom: 0;
-    width: 100%;
-}
-
-footer small {
-    font-size: 0.9rem;
+main {
+    display: flex;
+    justify-content: center;
+    width: 1700px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 form {
@@ -97,18 +91,22 @@ form {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #ee5555;
 }
 
 .grupo {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .campo label, .grupo label {
@@ -145,7 +143,7 @@ form {
 
 .grupo .campo {
     flex: 1;
-    min-width: 200px; /* Evita que os campos fiquem muito estreitos */
+    min-width: 200px; 
 }
 
 .campo select {
@@ -162,12 +160,12 @@ form {
 .campo input[type="radio"],
 .campo input[type="checkbox"] {
     margin-right: 10px;
-    accent-color: #007bff; /* Cor dos radio buttons e checkboxes */
+    accent-color: #007bff;
 }
 
 .campo input[type="radio"] + label,
 .campo input[type="checkbox"] + label {
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -179,7 +177,7 @@ form {
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 10px;
@@ -190,41 +188,23 @@ form {
 }
 
 .botao[type="reset"] {
-    background-color: #6c757d; /* Cor cinza para o botão de limpar */
+    background-color: #6c757d;
 }
 
 .botao[type="reset"]:hover {
     background-color: #5a6268;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .section-impar {
-        padding: 20px;
-        margin: 30px 10px;
-    }
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
 
-    .grupo {
-        flex-direction: column;
-    }
-
-    .campo input[type="text"],
-    .campo input[type="email"],
-    .campo select,
-    .campo textarea {
-        font-size: 0.9rem;
-    }
-
-    .botao {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #navbar ul {
-        gap: 10px;
-    }
-
-    .nav-a-link {
-        font-size: 0.9rem;
-    }
+footer small {
+    font-size: 0.9rem;
 }
